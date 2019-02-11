@@ -1,4 +1,6 @@
 $(document).ready(function () {
-    // $("header").sticky();
+    $("header").sticky({
+        zIndex: 1020
+    });
 
 });

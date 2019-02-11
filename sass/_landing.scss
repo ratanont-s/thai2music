@@ -181,8 +181,10 @@
     }
 }
 
-// Category Artists
-#categoryArtists {
+// Category Artists, Promotion, Accessory
+#categoryArtists,
+#promotion,
+#accessory {
     padding-bottom: 3rem;
 
     .card {
@@ -241,6 +243,30 @@
     }
 
     @include media-breakpoint-down(sm) {
+        .row {
+            margin-right: -5px;
+            margin-left: -5px;
+
+            >.col,
+            >[class*="col-"] {
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+        }
+
+        .grid {
+            .card {
+                display: none;
+
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    display: block;
+                }
+            }
+        }
+
         .card {
             &-title {
                 font-size: 20px;
@@ -248,6 +274,75 @@
 
             &-text {
                 font-size: 13px;
+            }
+        }
+    }
+}
+
+#categoryArtists {
+    .filter-button-group {
+        .btn {
+            color: $secondary;
+            font-size: 1.5rem;
+
+            @include hover-focus {
+                text-decoration: none;
+                color: white;
+            }
+
+            &.is-checked {
+                color: white;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .filter-button-group {
+            .btn {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+// Promotion
+#promotion {
+    @include media-breakpoint-down(sm) {
+        .card-lg {
+            margin-bottom: 1.5rem;
+
+            .card-body {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba($body-bg, .8);
+            }
+        }
+    }
+}
+
+// Accessory
+#accessory {
+    @include media-breakpoint-down(sm) {
+        .card {
+            &-header-overlay {
+                padding-left: .5rem;
+                padding-right: .5rem;
+
+                .btn {
+                    font-size: 12px;
+                    padding-left: .75rem;
+                    padding-right: .75rem;
+                }
+            }
+
+            &-title {
+                font-size: 16px;
+            }
+
+            &-text {
+                font-size: 10px;
             }
         }
     }

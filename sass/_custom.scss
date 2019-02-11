@@ -1,4 +1,16 @@
 // Header
+.sticky-wrapper {
+    position: relative;
+    z-index: $zindex-sticky;
+
+    &.is-sticky {
+        header {
+            background-color: rgba($body-bg, .95);
+            box-shadow: $box-shadow;
+        }
+    }
+}
+
 header {
 
     .nav {
@@ -47,6 +59,15 @@ header {
     }
 }
 
+// Main
+main {
+    margin-top: -66px;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: -56px;
+    }
+}
+
 // Text Title
 .text-title {
     @include gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%);
@@ -88,6 +109,28 @@ header {
 // Footer
 footer {
     padding: 1rem 0;
+    color: rgba($primary, .5);
+
+    .footer-link {
+        a {
+            opacity: .5;
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            // Hover
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        h6 {
+            font-size: 14px;
+        }
+    }
 }
 
 // Slick
@@ -146,4 +189,9 @@ footer {
             padding-right: 1rem;
         }
     }
+}
+
+// Hr
+hr {
+    border-top-color: rgba(white, .1);
 }
