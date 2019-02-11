@@ -1,4 +1,7 @@
 // Colors
+$primary:#5c55e2;
+$secondary:#76adf1;
+$info:#006cce;
 $body-bg:#241F2F;
 
 // Font
@@ -7,3 +10,10 @@ $font-pridi:"Pridi";
 $font-family-base: $font-pridi;
 $headings-font-family: $font-kanit;
 $headings-font-weight: 400;
+
+// Slick
+$slick-dot-color:$secondary;
+$slick-dot-size:1rem;
+
+// Buttons
+$btn-padding-y: 0.15rem;
