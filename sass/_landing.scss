@@ -57,7 +57,7 @@
         background: url("../images/bg-header-mobile.jpg") no-repeat center top scroll;
         background-size: cover;
         min-height: unset;
-        padding: 5rem 0 12rem;
+        padding-bottom: 10rem;
 
         &::before {
             height: 50px;
@@ -310,6 +310,10 @@
     @include media-breakpoint-down(sm) {
         .card-lg {
             margin-bottom: 1.5rem;
+
+            .card-header-overlay {
+                justify-content: center;
+            }
 
             .card-body {
                 position: absolute;

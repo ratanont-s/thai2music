@@ -20,30 +20,109 @@ header {
             &:hover {
                 .nav-link {
                     color: white;
+
+                    svg path {
+                        fill: white;
+                    }
                 }
             }
         }
 
         &-link {
+            color: $info;
             font-size: 1.4375rem;
             font-family: $font-kanit;
+
+            svg {
+                color: $primary;
+            }
         }
     }
 
     .dropdown {
-        &-search {
-            border-left: 1px solid;
+        &-toggle {
+            &:after {
+                display: none;
+            }
+        }
 
+        &-divider {
+            border-top-color: $primary;
+        }
+
+        &-menu {
+            padding: .5rem;
+            background-color: rgba($dark, .5);
+            border: 1px solid $primary;
+            position: relative;
+
+            &::before {
+                content: '\25B2';
+                position: absolute;
+                top: -17px;
+                left: 10px;
+                font-size: 15px;
+                color: $primary;
+            }
+        }
+
+        &-category {
             .dropdown {
-                &-toggle {
-                    &:after {
-                        display: none;
+                &-menu {
+                    color: $primary;
+
+                    ul {
+                        list-style-type: none;
+                        padding-left: unset;
+
+                        li {
+                            position: relative;
+
+                            &::before {
+                                content: '\25CF';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                font-size: 1rem;
+                            }
+
+                            ul {
+                                padding-left: 1rem;
+
+                                li {
+                                    position: relative;
+
+                                    &::before {
+                                        content: '\25CB';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        font-size: 1rem;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
 
-                &-menu {
-                    padding: .5rem;
-                    background-color: rgba(white, .15);
+                &-item {
+                    color: $primary;
+
+                    &:hover {
+                        background-color: unset;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        &-search {
+            border-left: 1px solid;
+
+            .dropdown-menu {
+                &::before {
+                    left: auto;
+                    right: 10px;
                 }
             }
 
@@ -51,15 +130,32 @@ header {
                 min-width: 250px;
                 background-color: transparent;
                 color: white;
-                background: url("../images/icon-search.svg") no-repeat right 1rem center;
+                background: url("../images/icon-search.svg") no-repeat left center;
                 background-size: 1.5rem;
                 border: unset;
+                padding-left: 2rem;
+
+                &:focus {
+                    outline: unset;
+                    box-shadow: unset;
+                }
+            }
+        }
+
+        &-login {
+            .dropdown-menu {
+                min-width: 250px;
+
+                &::before {
+                    left: auto;
+                    right: 40px;
+                }
             }
         }
     }
 
     @include media-breakpoint-up(lg) {
-        .nav-item:not(.dropdown) {
+        .nav-item:not(.dropdown-search) {
             padding-right: 1rem;
         }
 
@@ -80,6 +176,25 @@ header {
         }
     }
 
+    @include media-breakpoint-down(lg) {
+        .dropdown-menu {
+            margin-left: 15px;
+            margin-right: 15px;
+            position: absolute;
+
+            &::before {
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+
+        .dropdown-search .dropdown-menu {
+            margin-top: .5rem;
+            margin-right: unset;
+        }
+    }
+
     @include media-breakpoint-down(sm) {
 
         .navbar {
@@ -93,7 +208,7 @@ header {
 
     @include media-breakpoint-down(lg) {
         .navbar-collapse {
-            background-color: #210A40;
+            background-color: $dark;
             position: fixed;
             top: 0;
             left: 0;
