@@ -1,0 +1,12 @@
+.breadcrumb-item {
+    opacity: .8;
+
+    a {
+        text-decoration: none;
+        color: $primary;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

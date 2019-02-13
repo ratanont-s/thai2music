@@ -1,0 +1,26 @@
+#categoryPage {
+    #menuCategory {
+        .card {
+            background-color: unset;
+            border-color: $primary;
+            text-align: center;
+
+            &-img {
+                margin-bottom: 1rem;
+                max-height: 5.625rem;
+
+            }
+
+            &-title {
+                color: $primary;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        #menuCategory .card-title {
+            font-size: 24px;
+        }
+    }
+}
