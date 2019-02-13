@@ -2,8 +2,14 @@
 $primary:#5c55e2;
 $secondary:#76adf1;
 $info:#006cce;
+$danger:#d73d32;
 $dark:#210A40;
 $body-bg:#241F2F;
+$border-color:#6c65f1;
+
+// Dropdown
+$dropdown-bg:rgba(#32066e, .85);
+$dropdown-border-color:$border-color;
 
 // Font
 $font-kanit:"Kanit";
@@ -18,3 +24,16 @@ $slick-dot-size:1rem;
 
 // Buttons
 $btn-padding-y: 0.15rem;
+
+// Form
+$form-color:$border-color;
+$input-border-radius:10rem;
+$input-padding-y:.25rem;
+$input-padding-x:1rem;
+$input-bg:unset;
+$input-border-color:$border-color;
+$input-placeholder-color:$border-color;
+
+// Popover
+$popover-bg:#241f2f;
+$popover-border-color:$border-color;

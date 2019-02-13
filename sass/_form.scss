@@ -1,0 +1,11 @@
+form {
+    color: $form-color;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: white;
+        }
+    }
+}
