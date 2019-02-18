@@ -201,28 +201,213 @@
 
             <!-- Menu Category -->
             <div id="menuCategory" class="row">
-                <div class="col-6 col-xl-3">
-                    <div class="card card-body">
+                <div class="col-6 col-xl-3 menu-category">
+                    <a class="card card-body card-menu-category" id="wedding" tabindex="0" role="button" data-toggle="popover">
                         <img src="./dist/images/icon-like-plus.svg" alt="WEDDING" class="card-img">
                         <h2 class="card-title">WEDDING</h2>
+                    </a>
+                    <!-- Sub Menu Category -->
+                    <div id="submenuCategory-wedding" class="d-none">
+                        <a href="#">จีราฟเรคอร์ดส</a>
+                        <a href="#">เมกเกอร์เฮด</a>
+                        <a href="#">จีนี่ เร็คคอร์ด</a>
+                        <a href="#">GRAMMY</a>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="card card-body">
+                <div class="col-6 col-xl-3 menu-category">
+                    <a class="card card-body card-menu-category" id="dj" tabindex="0" role="button" data-toggle="popover">
                         <img src="./dist/images/icon-handset.svg" alt="DJ" class="card-img">
                         <h2 class="card-title">DJ</h2>
+                    </a>
+                    <!-- Sub Menu Category -->
+                    <div id="submenuCategory-dj" class="d-none">
+                        <a href="#">จีราฟเรคอร์ดส</a>
+                        <a href="#">เมกเกอร์เฮด</a>
+                        <a href="#">จีนี่ เร็คคอร์ด</a>
+                        <a href="#">GRAMMY</a>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="card card-body">
+                <div class="col-6 col-xl-3 menu-category">
+                    <a class="card card-body card-menu-category" id="party" tabindex="0" role="button" data-toggle="popover">
                         <img src="./dist/images/icon-space-invidiers.svg" alt="PARTY" class="card-img">
                         <h2 class="card-title">PARTY</h2>
+                    </a>
+                    <!-- Sub Menu Category -->
+                    <div id="submenuCategory-party" class="d-none">
+                        <a href="#">จีราฟเรคอร์ดส</a>
+                        <a href="#">เมกเกอร์เฮด</a>
+                        <a href="#">จีนี่ เร็คคอร์ด</a>
+                        <a href="#">GRAMMY</a>
                     </div>
                 </div>
-                <div class="col-6 col-xl-3">
-                    <div class="card card-body">
+                <div class="col-6 col-xl-3 menu-category">
+                    <a class="card card-body card-menu-category" id="private" tabindex="0" role="button" data-toggle="popover">
                         <img src="./dist/images/icon-rocket.svg" alt="PRIVATE" class="card-img">
                         <h2 class="card-title">PRIVATE</h2>
+                    </a>
+                    <!-- Sub Menu Category -->
+                    <div id="submenuCategory-private" class="d-none">
+                        <a href="#">จีราฟเรคอร์ดส</a>
+                        <a href="#">เมกเกอร์เฮด</a>
+                        <a href="#">จีนี่ เร็คคอร์ด</a>
+                        <a href="#">GRAMMY</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show Artists -->
+            <div class="grid row">
+                <div class="card element-item col-6 col-xl-3 wedding" data-category="wedding">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-01.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">June Violinist</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 party" data-category="party">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-02.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Peter Corp</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 events" data-category="events">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-03.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Tattoo Colour</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 wedding" data-category="wedding">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-04.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Phrima’s Band</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 party" data-category="party">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-05.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Tattoo Colour</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 events" data-category="events">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-06.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Phrima’s Band</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 wedding" data-category="wedding">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-07.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">Peter Corp</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
+                    </div>
+                </div>
+                <div class="card element-item col-6 col-xl-3 party" data-category="party">
+                    <div class="card-header">
+                        <img class="card-img" src="./dist/images/category-artists-08.jpg" alt="Category">
+                        <div class="card-header-overlay">
+                            <div class="card-detail">
+                                <a href="./detail-artists.html" class="btn btn-info btn-pill">Reserve
+                                    &rarr;</a>
+                            </div>
+                        </div>
+                        <a tabindex="0" class="card-header-share" role="button" data-toggle="popover">
+                            <i class="fas fa-share"></i>
+                            25 Share
+                        </a>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title mb-1">June Violinist</h4>
+                        <p class="card-text">ราคาเริ่มต้น 35,000 บาท</p>
                     </div>
                 </div>
             </div>
@@ -241,6 +426,13 @@
         </div>
     </footer>
 
+    <!-- Popover Share -->
+    <div id="popoverShare" class="d-none">
+        <a href="#" target="_blank" class="link-social"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank" class="link-social"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" class="link-social"><i class="fab fa-google-plus-g"></i></a>
+    </div>
+
     <!-- JS -->
     <!-- Main JS -->
     <script src="./dist/js/jquery.min.js"></script>
@@ -249,6 +441,8 @@
 
     <!-- Plugin JS -->
     <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/isotope.pkgd.min.js"></script>
+    <script src="./dist/js/imagesloaded.pkgd.min.js"></script>
     <script src="./dist/js/script.js"></script>
     <script>
         $(document).ready(function () {
@@ -263,6 +457,33 @@
                         slidesToScroll: 2
                     }
                 }]
+            });
+
+            // 
+            var $grid = $('.grid').imagesLoaded(function () {
+                $grid.isotope({
+                    itemSelector: '.element-item',
+                    percentPosition: true,
+                    layoutMode: 'fitRows',
+                });
+                // $grid.isotope({
+                //     filter: '.wedding'
+                // });
+                // $grid.isotope({
+                //     filter: '.party'
+                // });
+                // $grid.isotope({
+                //     filter: '.events'
+                // });
+                // $grid.isotope({
+                //     filter: '*'
+                // });
+                // $('.filter-button-group').on('click', 'button', function () {
+                //     var filterValue = $(this).attr('data-filter');
+                //     $grid.isotope({
+                //         filter: filterValue
+                //     });
+                // });
             });
         });
     </script>

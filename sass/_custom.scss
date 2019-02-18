@@ -151,3 +151,16 @@ footer {
 hr {
     border-top-color: rgba(white, .1);
 }
+
+// Link Social
+.link-social {
+    margin-right: .5rem;
+
+    &:hover {
+        color: $light;
+    }
+
+    &:last-child {
+        margin-right: unset;
+    }
+}

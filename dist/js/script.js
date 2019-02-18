@@ -12,6 +12,34 @@ $(".popover-forget-pass").each(function (i, obj) {
 
 });
 
+$(".card-menu-category").each(function (i, obj) {
+
+    $(this).popover({
+        container: '#menuCategory',
+        html: true,
+        placement: 'bottom',
+        trigger: 'click',
+        content: function () {
+            var id = $(this).attr('id')
+            return $('#submenuCategory-' + id).html();
+        }
+    });
+
+});
+
+$(function () {
+    $('.card-header-share').popover({
+        container: '.grid',
+        html: true,
+        placement: 'bottom',
+        trigger: 'focus',
+        content: function () {
+            var id = $(this).attr('id')
+            return $('#popoverShare' + id).html();
+        }
+    })
+})
+
 $(document).ready(function () {
     $("header").sticky({
         zIndex: 1020

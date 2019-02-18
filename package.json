@@ -12,5 +12,8 @@
     "jquery": "^3.3.1",
     "jquery-sticky": "^1.0.4",
     "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.2"
   }
 }
