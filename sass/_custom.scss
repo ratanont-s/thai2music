@@ -164,3 +164,43 @@ hr {
         margin-right: unset;
     }
 }
+
+.popover {
+    border-radius: 10rem;
+    background-color: rgba($popover-bg, .7);
+
+    .arrow {
+        &:after {
+            border-bottom-color: rgba($popover-bg, .7);
+        }
+    }
+
+    &-body {
+        padding: .25rem 1.5rem;
+    }
+}
+
+// Row Custom
+.row-custom {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
+
+    >.col,
+    >[class*="col-"] {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-right: -15px;
+        margin-left: -15px;
+
+        >.col,
+        >[class*="col-"] {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+}

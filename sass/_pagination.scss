@@ -1,0 +1,53 @@
+.pagination {
+    .page {
+        &-item {
+
+            &:not(:last-child) {
+                margin-right: .5rem;
+            }
+
+            &:nth-last-child(2) {
+                margin-right: unset;
+            }
+
+            &:first-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .page-link {
+                    border: unset;
+                    border-radius: unset;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            &:last-child {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .page-link {
+                    border: unset;
+                    border-radius: unset;
+
+                    img {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-link {
+            opacity: .5;
+            font-family: $font-kanit;
+
+            @include hover-focus {
+                opacity: 1;
+            }
+        }
+    }
+}

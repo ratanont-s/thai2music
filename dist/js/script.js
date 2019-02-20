@@ -18,7 +18,7 @@ $(".card-menu-category").each(function (i, obj) {
         container: '#menuCategory',
         html: true,
         placement: 'bottom',
-        trigger: 'click',
+        trigger: 'focus',
         content: function () {
             var id = $(this).attr('id')
             return $('#submenuCategory-' + id).html();
@@ -35,7 +35,7 @@ $(function () {
         trigger: 'focus',
         content: function () {
             var id = $(this).attr('id')
-            return $('#popoverShare' + id).html();
+            return $('#popoverShare').html();
         }
     })
 })
