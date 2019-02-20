@@ -144,15 +144,15 @@
                         </li>
                         <!-- Login Desktop (หลัง Login) -->
                         <!-- <li class="nav-item dropdown dropdown-login d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
-                            <div class="dropdown-menu dropdown-menu-right">
-                                <ul>
-                                    <li><a href="#" class="dropdown-item">การจองศิลปิน</a></li>
-                                    <li><a href="#" class="dropdown-item">บัญชีของฉัน</a></li>
-                                    <li><a href="#" class="dropdown-item">ออกจากระบบ</a></li>
-                                </ul>
-                            </div>
-                        </li> -->
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul>
+                                        <li><a href="#" class="dropdown-item">การจองศิลปิน</a></li>
+                                        <li><a href="#" class="dropdown-item">บัญชีของฉัน</a></li>
+                                        <li><a href="#" class="dropdown-item">ออกจากระบบ</a></li>
+                                    </ul>
+                                </div>
+                            </li> -->
                         <!-- Search Desktop -->
                         <li class="nav-item dropdown dropdown-search d-none d-lg-block">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -201,99 +201,271 @@
                     <li class="breadcrumb-item"><a href="./index.html"><img src="./dist/images/icon-note.png" alt="หน้าแรก"
                                 class="align-text-top">
                             หน้าแรก</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Artists</li>
+                    <li class="breadcrumb-item"><a href="./artists.html">Artists</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">EBOLA</li>
                 </ol>
             </nav>
 
-            <!-- Text Title -->
-            <h1 class="text-title">Artists</h1>
-
-            <!-- Footer -->
-            <footer>
-                <div class="container text-center">
-                    <h6>© (C) Thai2Music, All Rights Reserved.THAI2MUSIC</h6>
-                    <div class="footer-link">
-                        <a href="#" target="_blank"><img src="./dist/images/icon-facebook.png" alt="Facebook"></a>
-                        <a href="#" target="_blank"><img src="./dist/images/icon-twitter.png" alt="Twitter"></a>
-                        <a href="#" target="_blank"><img src="./dist/images/icon-google-plus.png" alt="Google Plus"></a>
+            <div class="row">
+                <div class="col-12 col-xl-3 col-left">
+                    <div class="border border-primary">
+                        <div class="work-schedule p-2">
+                            <h4 class="text-gradient mt-3">ตารางงาน</h4>
+                            <div class="text-light" id="workScheduleSlide">
+                                <div class="h-auto">
+                                    <h5>1 มกราคมะ 2562</h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                            <div>
+                                                <p class="mb-0">10:00 - 12:00</p>
+                                                <p class="mb-0 text-secondary">งานเกษตรแฟร์</p>
+                                            </div>
+                                            <div class="ml-auto"><span class="badge badge-primary badge-pill">คอนเฟิร์ม</span></div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                            <div>
+                                                <p class="mb-0">14:00 - 16:00</p>
+                                                <p class="mb-0 text-secondary">งาน mobile expo 2019</p>
+                                            </div>
+                                            <div class="ml-auto"><span class="badge badge-dark badge-pill">รอคอนเฟิร์ม</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="h-auto">
+                                    <h5>1 มกราคมะ 2562</h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                            <div>
+                                                <p class="mb-0">10:00 - 12:00</p>
+                                                <p class="mb-0 text-secondary">งานเกษตรแฟร์</p>
+                                            </div>
+                                            <div class="ml-auto"><span class="badge badge-primary badge-pill">คอนเฟิร์ม</span></div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                            <div>
+                                                <p class="mb-0">14:00 - 16:00</p>
+                                                <p class="mb-0 text-secondary">งาน mobile expo 2019</p>
+                                            </div>
+                                            <div class="ml-auto"><span class="badge badge-dark badge-pill">รอคอนเฟิร์ม</span></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="border-primary my-0">
+                        <div class="p-2">
+                            <h4 class="text-gradient mt-3">ขัั้นตอนการจอง</h4>
+                            <ol class="text-secondary pl-4 mb-0">
+                                <li>เลือกศิลปิน วง ที่ต้องการ</li>
+                                <li>กรอกรายละเอียดข้อมูลการจอง</li>
+                                <li>รอการเช็คคิวจากทางเรา</li>
+                                <li>จ่ายมัดจำ <span class="text-light">50%</span> จากราคาทั้งหมด</li>
+                                <li>คอมเฟิมจากทางศิลปิน</li>
+                                <li>จ่ายมัดจำ <span class="text-light">50%</span> ก่อนวันงาน 7 วัน</li>
+                                <li>จบขั้นตอนการจอง</li>
+                            </ol>
+                        </div>
+                        <hr class="border-primary my-0">
+                        <div class="p-2">
+                            <h4 class="text-gradient mt-3">วันโชว์</h4>
+                            <p class="text-secondary">ทีมงาน <span class="text-light">Thai2Music</span> จะเข้าไปดูความ
+                                พร้อมของสถานที่ แสง สี เสียง เพื่อ
+                                ตรวจสอบความพร้อมก่อนแสดงก่อนโชว์
+                                ทีมงานจะนัดทีมงานอีกครั้ง
+                            </p>
+                            <p class="text-secondary mb-0">ทีมงาน <span class="text-light">Thai2Music</span>
+                                จะดูแลศิลปิน
+                                ตั้งแต่ต้นยันจบงาน</p>
+                        </div>
                     </div>
                 </div>
-            </footer>
+                <div class="col-12 col-xl-9 col-right">
+                    <div>
+                        <h1 class="text-gradient">EBOLA</h1>
+                        <h4 class="text-primary">อีโบลา วงดนตรีแนวเมทัล ที่จะมาสนั่นทุกเวที!!</h4>
+                        <p class="text-secondary">ทางวงเริ่มใช้ชื่ออีโบล่าอย่างเป็นทางการในช่วงปลายปี 2538
+                            ขึ้นสำหรับการแสดงคอนเสริ์ต
+                            โดยอีโบล่าเป็นที่รู้จัก
+                            แวดวงใต้ดินอย่างมาก และเป็นที่ยอมรับในกลุ่มคนฟัง ปีถัดมา 2539
+                            ทางวงได้ทำการแสดงคอนเสริ์ตต่อเนื่อง
+                            เพลงที่ได้รับกระแสความดังมากที่สุดเพลงหนึ่งด้วย Chart อันดับ 1 MTV Thailand Top 40 และ Top
+                            5
+                            ในหลายๆคลื่นทั่วประเทศ</p>
+                    </div>
+                    <div class="price-detail">
+                        <h1 class="text-gradient">รายละเอียดราคา</h1>
+                        <ul class="list-group mb-4">
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show ต่างจังหวัด (เดินทางรถตู้)</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show ต่างจังหวัด (เดินทางเครื่องบิน)</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show ต่างจังหวัด (เดินทางรถตู้)</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="list-group-detail">
+                                    <h4>Show 45 นาที</h4>
+                                    <p>[Backing track] Full Show ต่างจังหวัด (เดินทางเครื่องบิน)</p>
+                                </div>
+                                <div class="list-group-price">
+                                    <h4>70,000 บาท</h4>
+                                    <span><a href="#" class="btn btn-info btn-pill">Reserve &rarr;</a></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="text-secondary">ทางวงเริ่มใช้ชื่ออีโบล่าอย่างเป็นทางการในช่วงปลายปี 2538
+                            ขึ้นสำหรับการแสดงคอนเสริ์ต
+                            โดยอีโบล่าเป็นที่รู้จัก
+                            แวดวงใต้ดินอย่างมาก และเป็นที่ยอมรับในกลุ่มคนฟัง ปีถัดมา 2539
+                            ทางวงได้ทำการแสดงคอนเสริ์ตต่อเนื่อง
+                            เพลงที่ได้รับกระแสความดังมากที่สุดเพลงหนึ่งด้วย Chart อันดับ 1 MTV Thailand Top 40 และ Top
+                            5
+                            ในหลายๆคลื่นทั่วประเทศ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-            <!-- Modal Login Mobile -->
-            <div class="modal modal-full" tabindex="-1" role="dialog" id="loginMobile">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header justify-content-center">
-                            <a href="#" data-dismiss="modal">
-                                <img src="./dist/images/icon-close-menu.png" alt="close">
-                            </a>
-                        </div>
-                        <div class="modal-body">
-                            <!-- ก่อน Login -->
-                            <form action="#">
-                                <div class="p-3">
-                                    <h5 class="text-white text-center mb-4">เข้าสู่ระบบ</h5>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="E-mail/เบอร์โทร/ชื่อผู้ใช้">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="รหัสผ่าน">
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <a class="popover-forget-pass" id="popoverForgetPassMobile" tabindex="0" role="button">ลืมรหัสผ่าน</a>
-                                        <div id="popover-content-popoverForgetPassMobile" class="d-none">
-                                            <div>
-                                                <h5 class="text-light text-center">ขอรหัสผ่านใหม่</h5>
-                                                <div class="form-group">
-                                                    <input class="form-control" type="text" placeholder="E-mail ของคุณ" />
-                                                </div>
-                                                <button type="submit" class="btn btn-info btn-block btn-pill">ขอรหัสผ่านใหม่</button>
-                                            </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h6>© (C) Thai2Music, All Rights Reserved.THAI2MUSIC</h6>
+            <div class="footer-link">
+                <a href="#" target="_blank"><img src="./dist/images/icon-facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="./dist/images/icon-twitter.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="./dist/images/icon-google-plus.png" alt="Google Plus"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Login Mobile -->
+    <div class="modal modal-full" tabindex="-1" role="dialog" id="loginMobile">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <a href="#" data-dismiss="modal">
+                        <img src="./dist/images/icon-close-menu.png" alt="close">
+                    </a>
+                </div>
+                <div class="modal-body">
+                    <!-- ก่อน Login -->
+                    <form action="#">
+                        <div class="p-3">
+                            <h5 class="text-white text-center mb-4">เข้าสู่ระบบ</h5>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="E-mail/เบอร์โทร/ชื่อผู้ใช้">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="รหัสผ่าน">
+                            </div>
+                            <div class="form-group text-center">
+                                <a class="popover-forget-pass" id="popoverForgetPassMobile" tabindex="0" role="button">ลืมรหัสผ่าน</a>
+                                <div id="popover-content-popoverForgetPassMobile" class="d-none">
+                                    <div>
+                                        <h5 class="text-light text-center">ขอรหัสผ่านใหม่</h5>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="E-mail ของคุณ" />
                                         </div>
-                                        | <a href="#" class="text-light">สมัครสมาชิก</a>
+                                        <button type="submit" class="btn btn-info btn-block btn-pill">ขอรหัสผ่านใหม่</button>
                                     </div>
-                                    <button type="submit" class="btn btn-info btn-pill btn-block">เข้าสู่ระบบ</button>
                                 </div>
-                                <hr class="mb-1">
-                                <div class="p-3">
-                                    <p class="text-center">หรือเข้าสู่ระบบด้วย</p>
-                                    <button type="button" class="btn btn-info btn-block btn-pill btn-icon">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.313 20">
-                                                <path d="M3.008,2.5H6.68V-6.445H9.531L10-10H6.68v-2.461a2,2,0,0,1,.313-1.25,1.814,1.814,0,0,1,1.445-.469h1.875v-3.164A19.347,19.347,0,0,0,7.578-17.5a4.528,4.528,0,0,0-3.32,1.23,4.632,4.632,0,0,0-1.25,3.457V-10H0v3.555H3.008Z"
-                                                    transform="translate(0 17.5)" fill="#fff" /></svg>
-                                        </span> Facebook
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-block btn-pill btn-icon">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.979 20">
-                                                <path d="M19.935-6.458H10.508v3.49h5.677a4.829,4.829,0,0,1-.729,1.719A4.812,4.812,0,0,1,13.685.521a6.247,6.247,0,0,1-3.177.781,6.057,6.057,0,0,1-3.1-.833A6.108,6.108,0,0,1,5.143-1.823,6.294,6.294,0,0,1,4.31-5a6.294,6.294,0,0,1,.833-3.177,6.108,6.108,0,0,1,2.266-2.292,6.057,6.057,0,0,1,3.1-.833,5.463,5.463,0,0,1,3.958,1.51l2.708-2.6A9.365,9.365,0,0,0,10.508-15a9.79,9.79,0,0,0-5.026,1.354A9.925,9.925,0,0,0,1.836-10,9.8,9.8,0,0,0,.508-5,9.8,9.8,0,0,0,1.836,0,9.925,9.925,0,0,0,5.482,3.646,9.79,9.79,0,0,0,10.508,5a9.9,9.9,0,0,0,5-1.25A8.664,8.664,0,0,0,18.893.286a10.5,10.5,0,0,0,1.2-5.078A9.613,9.613,0,0,0,19.935-6.458Zm9.635.365h2.917v2.917H29.57V-.26H26.654V-3.177H23.789V-6.094h2.865V-9.01H29.57Z"
-                                                    transform="translate(-0.508 15)" fill="#fff" /></svg>
-                                        </span> Google
-                                    </button>
-                                </div>
-                            </form>
+                                | <a href="#" class="text-light">สมัครสมาชิก</a>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-pill btn-block">เข้าสู่ระบบ</button>
+                        </div>
+                        <hr class="mb-1">
+                        <div class="p-3">
+                            <p class="text-center">หรือเข้าสู่ระบบด้วย</p>
+                            <button type="button" class="btn btn-info btn-block btn-pill btn-icon">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.313 20">
+                                        <path d="M3.008,2.5H6.68V-6.445H9.531L10-10H6.68v-2.461a2,2,0,0,1,.313-1.25,1.814,1.814,0,0,1,1.445-.469h1.875v-3.164A19.347,19.347,0,0,0,7.578-17.5a4.528,4.528,0,0,0-3.32,1.23,4.632,4.632,0,0,0-1.25,3.457V-10H0v3.555H3.008Z"
+                                            transform="translate(0 17.5)" fill="#fff" /></svg>
+                                </span> Facebook
+                            </button>
+                            <button type="button" class="btn btn-danger btn-block btn-pill btn-icon">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.979 20">
+                                        <path d="M19.935-6.458H10.508v3.49h5.677a4.829,4.829,0,0,1-.729,1.719A4.812,4.812,0,0,1,13.685.521a6.247,6.247,0,0,1-3.177.781,6.057,6.057,0,0,1-3.1-.833A6.108,6.108,0,0,1,5.143-1.823,6.294,6.294,0,0,1,4.31-5a6.294,6.294,0,0,1,.833-3.177,6.108,6.108,0,0,1,2.266-2.292,6.057,6.057,0,0,1,3.1-.833,5.463,5.463,0,0,1,3.958,1.51l2.708-2.6A9.365,9.365,0,0,0,10.508-15a9.79,9.79,0,0,0-5.026,1.354A9.925,9.925,0,0,0,1.836-10,9.8,9.8,0,0,0,.508-5,9.8,9.8,0,0,0,1.836,0,9.925,9.925,0,0,0,5.482,3.646,9.79,9.79,0,0,0,10.508,5a9.9,9.9,0,0,0,5-1.25A8.664,8.664,0,0,0,18.893.286a10.5,10.5,0,0,0,1.2-5.078A9.613,9.613,0,0,0,19.935-6.458Zm9.635.365h2.917v2.917H29.57V-.26H26.654V-3.177H23.789V-6.094h2.865V-9.01H29.57Z"
+                                            transform="translate(-0.508 15)" fill="#fff" /></svg>
+                                </span> Google
+                            </button>
+                        </div>
+                    </form>
 
-                            <!-- หลัง Login -->
-                            <!-- <ul>
+                    <!-- หลัง Login -->
+                    <!-- <ul>
                         <li><a href="#">การจองศิลปิน</a></li>
                         <li><a href="#">บัญชีของฉัน</a></li>
                         <li><a href="#">ออกจากระบบ</a></li>
                     </ul> -->
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- JS -->
-            <!-- Main JS -->
-            <script src="./dist/js/jquery.min.js"></script>
-            <script src="./dist/js/jquery.sticky.js"></script>
-            <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS -->
+    <!-- Main JS -->
+    <script src="./dist/js/jquery.min.js"></script>
+    <script src="./dist/js/jquery.sticky.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Plugin JS -->
-            <script src="./dist/js/script.js"></script>
+    <!-- Plugin JS -->
+    <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#workScheduleSlide').slick();
+        });
+    </script>
 </body>
 
 </html>

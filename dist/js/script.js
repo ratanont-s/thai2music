@@ -1,3 +1,9 @@
+$(function () {
+    $("header").sticky({
+        zIndex: 1020
+    });
+})
+
 $(".popover-forget-pass").each(function (i, obj) {
 
     $(this).popover({
@@ -39,9 +45,3 @@ $(function () {
         }
     })
 })
-
-$(document).ready(function () {
-    $("header").sticky({
-        zIndex: 1020
-    });
-});

@@ -5,6 +5,7 @@ $info:#006cce;
 $warning:#dab71b;
 $danger:#d73d32;
 $dark:#210A40;
+$light:#CFDFF4;
 $body-bg:#241F2F;
 $border-color:#6c65f1;
 
@@ -16,6 +17,7 @@ $dropdown-border-color:$border-color;
 $font-kanit:"Kanit";
 $font-pridi:"Pridi";
 $font-family-base: $font-pridi;
+$font-weight-base:300;
 $headings-font-family: $font-kanit;
 $headings-font-weight: 400;
 
@@ -51,3 +53,6 @@ $pagination-hover-bg:unset;
 $pagination-border-color:$primary;
 $pagination-hover-border-color:$primary;
 $pagination-hover-color:$primary;
+
+// Badge
+$badge-font-weight:300;

@@ -7,41 +7,54 @@ main {
     }
 }
 
-// Text Title
-.text-title {
-    @include gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-    display: table;
-    font-size: 2.625rem;
-    text-align: center;
-    margin: 0 auto 1.5rem;
+// Text 
+.text {
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -4.125rem;
-        width: 3.125rem;
-        height: 100%;
-        background: url("../images/icon-title-left.png") no-repeat center center;
-        background-size: contain;
+    // Title
+    &-title {
+        @include gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: table;
+        font-size: 2.625rem;
+        text-align: center;
+        margin: 0 auto 1.5rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -4.125rem;
+            width: 3.125rem;
+            height: 100%;
+            background: url("../images/icon-title-left.png") no-repeat center center;
+            background-size: contain;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -4.125rem;
+            width: 3.125rem;
+            height: 100%;
+            background: url("../images/icon-title-right.png") no-repeat center center;
+            background-size: contain;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 32px;
+        }
     }
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -4.125rem;
-        width: 3.125rem;
-        height: 100%;
-        background: url("../images/icon-title-right.png") no-repeat center center;
-        background-size: contain;
-    }
-
-    @include media-breakpoint-down(sm) {
-        font-size: 32px;
+    // Gradient
+    &-gradient {
+        @include gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: 0%, $end-percent: 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        display: table;
     }
 }
 
