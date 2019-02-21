@@ -1,0 +1,60 @@
+#formArtistsPage {
+    .list-group {
+        &-item {
+            display: flex;
+            background-color: unset;
+            border: unset;
+            border-radius: unset;
+            color: $secondary;
+            border-bottom: 1px solid rgba($primary, .2);
+
+            .item {
+
+                &-number {
+                    font: {
+                        family: $font-pridi;
+                        size: 4.5rem;
+                        weight: 300;
+                    }
+
+                    line-height: 4rem;
+                    min-width: 4rem;
+                    color: $primary;
+                    margin-bottom: 0;
+                }
+
+                &-detail {
+                    flex-grow: 1;
+
+                    h2 {
+                        margin-bottom: 0;
+                        color: $light;
+                    }
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                &-price {
+                    display: flex;
+
+                    &-text {
+                        min-width: 8rem;
+                        margin-bottom: 0;
+                    }
+
+                    &-quantity {
+                        min-width: 4rem;
+                        margin-bottom: 0;
+                    }
+
+                    &-total {
+                        min-width: 10rem;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

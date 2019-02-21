@@ -1,17 +1,21 @@
 // Header
-.sticky-wrapper {
-    position: relative;
-    z-index: $zindex-sticky;
+// .sticky-wrapper {
+//     position: relative;
+//     z-index: $zindex-sticky;
 
-    &.is-sticky {
-        header {
-            background-color: rgba($body-bg, .95);
-            box-shadow: $box-shadow;
-        }
-    }
-}
+//     &.is-sticky {
+//         header {
+//             background-color: rgba($body-bg, .95);
+//             box-shadow: $box-shadow;
+//         }
+//     }
+// }
 
 header {
+    &.show {
+        background-color: rgba($body-bg, .95);
+        box-shadow: $box-shadow;
+    }
 
     .nav {
         &-item {

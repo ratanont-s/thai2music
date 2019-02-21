@@ -11,7 +11,7 @@
 <body>
 
     <!-- Header -->
-    <header>
+    <header id="header" class="fixed-top">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -96,63 +96,63 @@
                                 Contact Us</a>
                         </li>
                         <!-- Login Desktop (ก่อน Login) -->
-                        <li class="nav-item dropdown dropdown-login d-none d-lg-block">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
-                            <form class="dropdown-menu dropdown-menu-right p-0">
-                                <div class="p-3">
-                                    <h5 class="text-white">เข้าสู่ระบบ</h5>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="E-mail/เบอร์โทร/ชื่อผู้ใช้">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="รหัสผ่าน">
-                                    </div>
-                                    <div class="form-group text-center">
-                                        <a class="popover-forget-pass" id="popoverForgetPass" tabindex="0" role="button">ลืมรหัสผ่าน</a>
-                                        <div id="popover-content-popoverForgetPass" class="d-none">
-                                            <div>
-                                                <h5 class="text-light text-center">ขอรหัสผ่านใหม่</h5>
-                                                <div class="form-group">
-                                                    <input class="form-control" type="text" placeholder="E-mail ของคุณ" />
-                                                </div>
-                                                <button type="submit" class="btn btn-info btn-block btn-pill">ขอรหัสผ่านใหม่</button>
-                                            </div>
-                                        </div>
-                                        | <a href="#">สมัครสมาชิก</a>
-                                    </div>
-                                    <button type="submit" class="btn btn-info btn-pill btn-block">เข้าสู่ระบบ</button>
-                                </div>
-                                <hr>
-                                <div class="p-3">
-                                    <p class="text-center">หรือเข้าสู่ระบบด้วย</p>
-                                    <button type="button" class="btn btn-info btn-block btn-pill btn-icon">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.313 20">
-                                                <path d="M3.008,2.5H6.68V-6.445H9.531L10-10H6.68v-2.461a2,2,0,0,1,.313-1.25,1.814,1.814,0,0,1,1.445-.469h1.875v-3.164A19.347,19.347,0,0,0,7.578-17.5a4.528,4.528,0,0,0-3.32,1.23,4.632,4.632,0,0,0-1.25,3.457V-10H0v3.555H3.008Z"
-                                                    transform="translate(0 17.5)" fill="#fff" /></svg>
-                                        </span> Facebook
-                                    </button>
-                                    <button type="button" class="btn btn-danger btn-block btn-pill btn-icon">
-                                        <span class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.979 20">
-                                                <path d="M19.935-6.458H10.508v3.49h5.677a4.829,4.829,0,0,1-.729,1.719A4.812,4.812,0,0,1,13.685.521a6.247,6.247,0,0,1-3.177.781,6.057,6.057,0,0,1-3.1-.833A6.108,6.108,0,0,1,5.143-1.823,6.294,6.294,0,0,1,4.31-5a6.294,6.294,0,0,1,.833-3.177,6.108,6.108,0,0,1,2.266-2.292,6.057,6.057,0,0,1,3.1-.833,5.463,5.463,0,0,1,3.958,1.51l2.708-2.6A9.365,9.365,0,0,0,10.508-15a9.79,9.79,0,0,0-5.026,1.354A9.925,9.925,0,0,0,1.836-10,9.8,9.8,0,0,0,.508-5,9.8,9.8,0,0,0,1.836,0,9.925,9.925,0,0,0,5.482,3.646,9.79,9.79,0,0,0,10.508,5a9.9,9.9,0,0,0,5-1.25A8.664,8.664,0,0,0,18.893.286a10.5,10.5,0,0,0,1.2-5.078A9.613,9.613,0,0,0,19.935-6.458Zm9.635.365h2.917v2.917H29.57V-.26H26.654V-3.177H23.789V-6.094h2.865V-9.01H29.57Z"
-                                                    transform="translate(-0.508 15)" fill="#fff" /></svg>
-                                        </span> Google
-                                    </button>
-                                </div>
-                            </form>
-                        </li>
-                        <!-- Login Desktop (หลัง Login) -->
                         <!-- <li class="nav-item dropdown dropdown-login d-none d-lg-block">
                                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <ul>
-                                        <li><a href="#" class="dropdown-item">การจองศิลปิน</a></li>
-                                        <li><a href="#" class="dropdown-item">บัญชีของฉัน</a></li>
-                                        <li><a href="#" class="dropdown-item">ออกจากระบบ</a></li>
-                                    </ul>
-                                </div>
+                                <form class="dropdown-menu dropdown-menu-right p-0">
+                                    <div class="p-3">
+                                        <h5 class="text-white">เข้าสู่ระบบ</h5>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="E-mail/เบอร์โทร/ชื่อผู้ใช้">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="รหัสผ่าน">
+                                        </div>
+                                        <div class="form-group text-center">
+                                            <a class="popover-forget-pass" id="popoverForgetPass" tabindex="0" role="button">ลืมรหัสผ่าน</a>
+                                            <div id="popover-content-popoverForgetPass" class="d-none">
+                                                <div>
+                                                    <h5 class="text-light text-center">ขอรหัสผ่านใหม่</h5>
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text" placeholder="E-mail ของคุณ" />
+                                                    </div>
+                                                    <button type="submit" class="btn btn-info btn-block btn-pill">ขอรหัสผ่านใหม่</button>
+                                                </div>
+                                            </div>
+                                            | <a href="#">สมัครสมาชิก</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-info btn-pill btn-block">เข้าสู่ระบบ</button>
+                                    </div>
+                                    <hr>
+                                    <div class="p-3">
+                                        <p class="text-center">หรือเข้าสู่ระบบด้วย</p>
+                                        <button type="button" class="btn btn-info btn-block btn-pill btn-icon">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.313 20">
+                                                    <path d="M3.008,2.5H6.68V-6.445H9.531L10-10H6.68v-2.461a2,2,0,0,1,.313-1.25,1.814,1.814,0,0,1,1.445-.469h1.875v-3.164A19.347,19.347,0,0,0,7.578-17.5a4.528,4.528,0,0,0-3.32,1.23,4.632,4.632,0,0,0-1.25,3.457V-10H0v3.555H3.008Z"
+                                                        transform="translate(0 17.5)" fill="#fff" /></svg>
+                                            </span> Facebook
+                                        </button>
+                                        <button type="button" class="btn btn-danger btn-block btn-pill btn-icon">
+                                            <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.979 20">
+                                                    <path d="M19.935-6.458H10.508v3.49h5.677a4.829,4.829,0,0,1-.729,1.719A4.812,4.812,0,0,1,13.685.521a6.247,6.247,0,0,1-3.177.781,6.057,6.057,0,0,1-3.1-.833A6.108,6.108,0,0,1,5.143-1.823,6.294,6.294,0,0,1,4.31-5a6.294,6.294,0,0,1,.833-3.177,6.108,6.108,0,0,1,2.266-2.292,6.057,6.057,0,0,1,3.1-.833,5.463,5.463,0,0,1,3.958,1.51l2.708-2.6A9.365,9.365,0,0,0,10.508-15a9.79,9.79,0,0,0-5.026,1.354A9.925,9.925,0,0,0,1.836-10,9.8,9.8,0,0,0,.508-5,9.8,9.8,0,0,0,1.836,0,9.925,9.925,0,0,0,5.482,3.646,9.79,9.79,0,0,0,10.508,5a9.9,9.9,0,0,0,5-1.25A8.664,8.664,0,0,0,18.893.286a10.5,10.5,0,0,0,1.2-5.078A9.613,9.613,0,0,0,19.935-6.458Zm9.635.365h2.917v2.917H29.57V-.26H26.654V-3.177H23.789V-6.094h2.865V-9.01H29.57Z"
+                                                        transform="translate(-0.508 15)" fill="#fff" /></svg>
+                                            </span> Google
+                                        </button>
+                                    </div>
+                                </form>
                             </li> -->
+                        <!-- Login Desktop (หลัง Login) -->
+                        <li class="nav-item dropdown dropdown-login d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Login</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <ul>
+                                    <li><a href="#" class="dropdown-item">การจองศิลปิน</a></li>
+                                    <li><a href="#" class="dropdown-item">บัญชีของฉัน</a></li>
+                                    <li><a href="#" class="dropdown-item">ออกจากระบบ</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <!-- Search Desktop -->
                         <li class="nav-item dropdown dropdown-search d-none d-lg-block">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
@@ -172,9 +172,9 @@
     <!-- Main -->
     <main id="detailArtistsPage">
         <!-- Head -->
-        <section id="headDetailArtists" style="background-image: url('./dist/images/bg-detail-artists.png')">
+        <section id="head" style="background-image: url('./dist/images/bg-detail-artists.png')">
             <div class="container">
-                <div class="row-custom align-items-center">
+                <div class="row-custom">
                     <div class="col-6 col-xl-8">
                         <div class="artists-info">
                             <h3>ARTIST</h3>
@@ -211,7 +211,7 @@
                     <div class="border border-primary">
                         <div class="work-schedule p-2">
                             <h4 class="text-gradient mt-3">ตารางงาน</h4>
-                            <div class="text-light" id="workScheduleSlide">
+                            <div class="work-schedule-slide text-light">
                                 <div class="h-auto">
                                     <h5>1 มกราคมะ 2562</h5>
                                     <ul class="list-group">
@@ -285,8 +285,8 @@
                 </div>
                 <div class="col-12 col-xl-9 col-right">
                     <div>
-                        <h1 class="text-gradient">EBOLA</h1>
-                        <h4 class="text-primary">อีโบลา วงดนตรีแนวเมทัล ที่จะมาสนั่นทุกเวที!!</h4>
+                        <h1 class="text-title">EBOLA</h1>
+                        <h4 class="text-subtitle">อีโบลา วงดนตรีแนวเมทัล ที่จะมาสนั่นทุกเวที!!</h4>
                         <p class="text-secondary">ทางวงเริ่มใช้ชื่ออีโบล่าอย่างเป็นทางการในช่วงปลายปี 2538
                             ขึ้นสำหรับการแสดงคอนเสริ์ต
                             โดยอีโบล่าเป็นที่รู้จัก
@@ -297,7 +297,7 @@
                             ในหลายๆคลื่นทั่วประเทศ</p>
                     </div>
                     <div class="price-detail">
-                        <h1 class="text-gradient">รายละเอียดราคา</h1>
+                        <h1 class="text-title">รายละเอียดราคา</h1>
                         <ul class="list-group mb-4">
                             <li class="list-group-item">
                                 <div class="list-group-detail">
@@ -369,7 +369,57 @@
                             5
                             ในหลายๆคลื่นทั่วประเทศ</p>
                     </div>
-                    <div id="artistsHotSlide">
+
+                    <!-- Show Tablet & Mobile Only -->
+                    <div class="work-schedule p-2 mb-5 d-xl-none">
+                        <h4 class="text-gradient">ตารางงาน</h4>
+                        <div class="work-schedule-slide text-light">
+                            <div class="h-auto">
+                                <h5>1 มกราคมะ 2562</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                        <div>
+                                            <p class="mb-0">10:00 - 12:00</p>
+                                            <p class="mb-0 text-secondary">งานเกษตรแฟร์</p>
+                                        </div>
+                                        <div class="ml-auto"><span class="badge badge-primary badge-pill">คอนเฟิร์ม</span></div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                        <div>
+                                            <p class="mb-0">14:00 - 16:00</p>
+                                            <p class="mb-0 text-secondary">งาน mobile expo 2019</p>
+                                        </div>
+                                        <div class="ml-auto"><span class="badge badge-dark badge-pill">รอคอนเฟิร์ม</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="h-auto">
+                                <h5>1 มกราคมะ 2562</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                        <div>
+                                            <p class="mb-0">10:00 - 12:00</p>
+                                            <p class="mb-0 text-secondary">งานเกษตรแฟร์</p>
+                                        </div>
+                                        <div class="ml-auto"><span class="badge badge-primary badge-pill">คอนเฟิร์ม</span></div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="mt-2"><i class="fas fa-circle"></i></span>
+                                        <div>
+                                            <p class="mb-0">14:00 - 16:00</p>
+                                            <p class="mb-0 text-secondary">งาน mobile expo 2019</p>
+                                        </div>
+                                        <div class="ml-auto"><span class="badge badge-dark badge-pill">รอคอนเฟิร์ม</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="artists-slide">
                         <div class="item h-auto">
                             <div class="card-columns">
                                 <div class="card">
@@ -490,7 +540,7 @@
                         </div>
                     </div>
 
-                    <div id="videoSlide">
+                    <div class="video-slide">
                         <div class="slider-for mb-2">
                             <div class="item h-auto">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -553,11 +603,39 @@
                         </div>
                     </div>
 
+                    <!-- Show Tablet & Mobile Only -->
+                    <div class="p-2 d-xl-none mb-4">
+                        <h4 class="text-gradient">ขัั้นตอนการจอง</h4>
+                        <ol class="text-secondary pl-4 mb-0">
+                            <li>เลือกศิลปิน วง ที่ต้องการ</li>
+                            <li>กรอกรายละเอียดข้อมูลการจอง</li>
+                            <li>รอการเช็คคิวจากทางเรา</li>
+                            <li>จ่ายมัดจำ <span class="text-light">50%</span> จากราคาทั้งหมด</li>
+                            <li>คอมเฟิมจากทางศิลปิน</li>
+                            <li>จ่ายมัดจำ <span class="text-light">50%</span> ก่อนวันงาน 7 วัน</li>
+                            <li>จบขั้นตอนการจอง</li>
+                        </ol>
+                    </div>
+                    <div class="p-2 d-xl-none mb-4">
+                        <h4 class="text-gradient">วันโชว์</h4>
+                        <p class="text-secondary">ทีมงาน <span class="text-light">Thai2Music</span> จะเข้าไปดูความ
+                            พร้อมของสถานที่ แสง สี เสียง เพื่อ
+                            ตรวจสอบความพร้อมก่อนแสดงก่อนโชว์
+                            ทีมงานจะนัดทีมงานอีกครั้ง
+                        </p>
+                        <p class="text-secondary mb-0">ทีมงาน <span class="text-light">Thai2Music</span>
+                            จะดูแลศิลปิน
+                            ตั้งแต่ต้นยันจบงาน</p>
+                    </div>
+
+
                     <div class="comment">
                         <div class="media border border-primary p-2 mb-4">
                             <div class="mr-3">
-                                <img src="./dist/images/avatar-01.jpg" alt="Avatar" class="img-fluid mb-2">
-                                <h1 class="text-primary text-center mb-0">1</h1>
+                                <div class="media-img">
+                                    <img src="./dist/images/avatar-01.jpg" alt="Avatar">
+                                </div>
+                                <h1 class="media-number">1</h1>
                             </div>
                             <div class="media-body">
                                 <div class="d-flex mb-4">
@@ -580,8 +658,10 @@
                         </div>
                         <div class="media border border-primary p-2 mb-4">
                             <div class="mr-3">
-                                <img src="./dist/images/avatar-02.jpg" alt="Avatar" class="img-fluid mb-2">
-                                <h1 class="text-primary text-center mb-0">2</h1>
+                                <div class="media-img">
+                                    <img src="./dist/images/avatar-02.jpg" alt="Avatar">
+                                </div>
+                                <h1 class="media-number">2</h1>
                             </div>
                             <div class="media-body">
                                 <div class="d-flex mb-4">
@@ -605,7 +685,7 @@
                         <form class="comment-form border border-primary p-3">
                             <h3 class="text-gradient">แสดงความคิดเห็น</h3>
                             <div class="form-group">
-                                <textarea rows="10" class="form-control rounded-0 border-primary"></textarea>
+                                <textarea rows="10" class="form-control rounded-0"></textarea>
                             </div>
                             <div class="text-right">
                                 <button type="submit" class="btn btn-info btn-pill">Comment</button>
@@ -614,7 +694,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -699,35 +778,15 @@
     <!-- JS -->
     <!-- Main JS -->
     <script src="./dist/js/jquery.min.js"></script>
-    <script src="./dist/js/jquery.sticky.js"></script>
     <script src="./dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JS -->
     <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/isotope.pkgd.min.js"></script>
+    <script src="./dist/js/imagesloaded.pkgd.min.js"></script>
     <script src="./dist/js/script.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#workScheduleSlide').slick();
-            $('#artistsHotSlide').slick({
-                arrows: false,
-                dots: true
-            });
-            $('#videoSlide .slider-for').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                fade: true,
-                asNavFor: '.slider-nav'
-            });
-            $('#videoSlide .slider-nav').slick({
-                arrows: false,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                asNavFor: '.slider-for',
-                dots: true,
-                focusOnSelect: true
-            });
-        });
+
     </script>
 </body>
 
