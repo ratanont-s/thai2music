@@ -1,4 +1,4 @@
-#formArtistsPage {
+#orderPage {
     .list-group {
         &-item {
             display: flex;
@@ -26,36 +26,13 @@
                     margin-bottom: 0;
                 }
 
-                &-detail {
-                    display: flex;
-                    flex-grow: 1;
+                .icon-close {
+                    display: inline-block;
 
-                    &-text {
-                        flex-grow: 1;
-
-                        h2 {
-                            margin-bottom: 0;
-                            color: $light;
+                    @include hover-focus {
+                        svg path {
+                            stroke: white !important;
                         }
-
-                        p {
-                            margin-bottom: 0;
-                        }
-                    }
-                }
-
-                &-price {
-
-                    &-text {
-                        margin-bottom: 0;
-                    }
-
-                    &-quantity {
-                        margin-bottom: 0;
-                    }
-
-                    &-total {
-                        margin-bottom: 0;
                     }
                 }
             }

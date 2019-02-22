@@ -45,6 +45,15 @@
 
         @include media-breakpoint-down(sm) {
             font-size: 32px;
+
+            &::before,
+            &::after {
+                width: 3rem;
+            }
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 30px;
         }
     }
 
@@ -177,6 +186,7 @@ hr {
         margin-right: unset;
     }
 }
+
 
 .popover {
     border-radius: 10rem;
