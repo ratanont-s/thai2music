@@ -227,3 +227,17 @@ hr {
         }
     }
 }
+
+.line {
+    &-y {
+        width: 1px;
+        height: 100%;
+        background-color: $border-color;
+    }
+
+    &-x {
+        width: 100%;
+        height: 1px;
+        background-color: $border-color;
+    }
+}
