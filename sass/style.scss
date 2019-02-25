@@ -3,12 +3,14 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import '../node_modules/slick-carousel/slick/slick.scss';
 @import '../node_modules/slick-carousel/slick/slick-theme.scss';
+@import '../node_modules/@chenfengyuan/datepicker/src/index.scss';
 @import './header';
 @import './modal';
 @import './form';
 @import './breadcrumb';
 @import './card';
 @import './pagination';
+@import './table';
 @import './custom';
 @import './pages/pages';
 @import './landing';

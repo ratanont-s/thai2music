@@ -307,6 +307,101 @@
 
 // Promotion
 #promotion {
+    .card {
+        &-img {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .discount {
+                position: absolute;
+                bottom: .5rem;
+                right: .5rem;
+
+                &-inner {
+                    background-color: rgba(white, .15);
+                    border-radius: 100%;
+                    width: 115px;
+                    height: 115px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        width: calc(100% - 10px);
+                        height: calc(100% - 10px);
+                        background-color: #121116;
+                        border-radius: 100%;
+                    }
+                }
+
+                &-text {
+                    position: relative;
+
+                    h1 {
+                        margin-bottom: 0;
+                        color: $info;
+                        font-size: 48px;
+                        font-weight: 500;
+                        line-height: 28px;
+
+                        small {
+                            font-size: 40%;
+                        }
+                    }
+
+                    h2 {
+                        margin-bottom: 0;
+                        color: $light;
+                        font-size: 30px;
+                        line-height: 20px;
+                    }
+                }
+
+            }
+        }
+
+        &-lg {
+            .card-img {
+                .discount {
+                    top: .5rem;
+                    left: .5rem;
+                    right: auto;
+                    bottom: auto;
+
+                    &-inner {
+                        width: 150px;
+                        height: 150px;
+                    }
+
+                    &-text {
+                        position: relative;
+
+                        h1 {
+                            font-size: 70px;
+                            line-height: 40px;
+                        }
+
+                        h2 {
+                            font-size: 45px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @include media-breakpoint-down(sm) {
         .card-lg {
             margin-bottom: 1.5rem;

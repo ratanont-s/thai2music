@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@chenfengyuan/datepicker@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@chenfengyuan/datepicker/-/datepicker-1.0.7.tgz#fe697600b5fc2190a49386c53b363e04c3a8044d"
+  integrity sha512-Prcb9R0MVUgUXHPTsZzjF+YIxhrMCqsF0mmItlwy61KIBG+PIMwSNV9Zg9eyP4dyOdd33EDPbmC4KPwYYF7vEw==
+
 "@fortawesome/fontawesome-free@^5.7.2":
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.2.tgz#1498c3eb78ee7c78c5488418707de90aaf58d5d7"

@@ -39,6 +39,12 @@
                     }
                 }
             }
+
+            &.active {
+                .page-link {
+                    opacity: 1;
+                }
+            }
         }
 
         &-link {

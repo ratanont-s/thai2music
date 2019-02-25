@@ -46,6 +46,7 @@ $breadcrumb-bg: unset;
 $breadcrumb-divider: quote(">");
 $breadcrumb-divider-color:$primary;
 $breadcrumb-active-color:$primary;
+$breadcrumb-padding-x:0;
 
 // Pagination
 $pagination-bg:unset;
@@ -53,6 +54,12 @@ $pagination-hover-bg:unset;
 $pagination-border-color:$primary;
 $pagination-hover-border-color:$primary;
 $pagination-hover-color:$primary;
+$pagination-active-bg:unset;
+$pagination-active-border-color:$primary;
+$pagination-active-color:$primary;
 
 // Badge
 $badge-font-weight:300;
+
+// Tables
+$table-border-color:rgba($primary, .2);

@@ -6,6 +6,7 @@
   "author": "Rathanont Sukhapant <rathanont.s@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@chenfengyuan/datepicker": "^1.0.7",
     "bootstrap": "^4.2.1",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
