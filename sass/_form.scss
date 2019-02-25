@@ -9,3 +9,9 @@ form {
         }
     }
 }
+
+textarea {
+    &.form-control {
+        border-radius: 1rem;
+    }
+}
