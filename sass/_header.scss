@@ -1,15 +1,4 @@
 // Header
-// .sticky-wrapper {
-//     position: relative;
-//     z-index: $zindex-sticky;
-
-//     &.is-sticky {
-//         header {
-//             background-color: rgba($body-bg, .95);
-//             box-shadow: $box-shadow;
-//         }
-//     }
-// }
 
 header {
     &.show {
@@ -165,6 +154,16 @@ header {
                     border-top-color: $border-color;
                     margin-bottom: .25rem;
                 }
+
+                .form-group-help {
+                    .popover {
+                        border-radius: .5rem;
+
+                        &-body {
+                            padding: .5rem 1rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -198,9 +197,7 @@ header {
             position: absolute;
 
             &::before {
-                left: 0;
-                right: 0;
-                text-align: center;
+                display: none;
             }
         }
 
@@ -241,6 +238,16 @@ header {
                     text-align: center;
                 }
             }
+        }
+    }
+}
+
+.form-group-help-mobile {
+    .popover {
+        border-radius: .5rem;
+
+        &-body {
+            padding: .5rem 1rem;
         }
     }
 }

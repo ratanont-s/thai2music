@@ -54,18 +54,31 @@ $(function () {
             });
         });
     });
-    $(".popover-forget-pass").each(function (i, obj) {
+    $("#popoverForgetPass").each(function (i, obj) {
 
         $(this).popover({
+            container: '.form-group-help',
             html: true,
             placement: 'bottom',
-            trigger: 'focus',
+            trigger: 'click',
             content: function () {
                 var id = $(this).attr('id')
-                return $('#popover-content-' + id).html();
+                return $('#popoverForgetPassForm').html();
             }
         });
+    });
+    $("#popoverForgetPassMobile").each(function (i, obj) {
 
+        $(this).popover({
+            container: '.form-group-help-mobile',
+            html: true,
+            placement: 'bottom',
+            trigger: 'click',
+            content: function () {
+                var id = $(this).attr('id')
+                return $('#popoverForgetPassMobileForm').html();
+            }
+        });
     });
 
     $(".card-menu-category").each(function (i, obj) {
@@ -80,7 +93,6 @@ $(function () {
                 return $('#submenuCategory-' + id).html();
             }
         });
-
     });
     $('.card-header-share').popover({
         container: '.grid',
@@ -91,7 +103,16 @@ $(function () {
             var id = $(this).attr('id')
             return $('#popoverShare').html();
         }
-    })
+    });
+    $('.btn-share').popover({
+        html: true,
+        placement: 'bottom',
+        trigger: 'focus',
+        content: function () {
+            var id = $(this).attr('id')
+            return $('#popoverShare').html();
+        }
+    });
     $('#menuCategory').slick({
         slidesToShow: 4,
         infinite: false,
