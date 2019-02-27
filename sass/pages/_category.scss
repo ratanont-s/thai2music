@@ -40,6 +40,7 @@
         .popover {
             border: unset;
             background-color: unset;
+            max-width: calc(100% - 5px);
 
             .arrow {
 
@@ -51,10 +52,17 @@
 
             &-body {
                 font-size: 1.5rem;
+                padding: .25rem;
             }
 
             @include media-breakpoint-up(lg) {
                 max-width: 100%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                &-body {
+                    font-size: 17px;
+                }
             }
         }
     }

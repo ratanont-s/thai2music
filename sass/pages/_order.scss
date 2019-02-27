@@ -38,4 +38,35 @@
             }
         }
     }
+
+    .input-group-clock {
+        .input-group {
+            &-text {
+                background-color: unset;
+                border-right: unset;
+                color: $border-color;
+            }
+        }
+
+        .input-group-prepend.input-group-append {
+            .input-group-text {
+                border-left: unset;
+                border-right: unset;
+                color: white;
+            }
+        }
+
+        .input-clockpicker {
+            text-align: center;
+
+            &-start {
+                border-left: unset;
+                border-right: unset;
+            }
+
+            &-end {
+                border-left: unset;
+            }
+        }
+    }
 }
